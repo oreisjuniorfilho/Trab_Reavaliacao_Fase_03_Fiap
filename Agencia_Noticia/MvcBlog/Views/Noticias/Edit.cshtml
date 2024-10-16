@@ -1,0 +1,68 @@
+@model MvcBlogNoticias.Models.Noticia
+
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h2>Editar Notícia</h2>
+
+<form asp-action="Edit">
+    <div class="form-horizontal">
+        <h4>Notícia</h4>
+        <hr />
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <input type="hidden" asp-for="ID" />
+        <div class="form-group">
+            <label asp-for="Titulo" class="col-md-2 control-label"></label>
+            <div class="col-md-10">
+                <input asp-for="Titulo" class="form-control" />
+                <span asp-validation-for="Titulo" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <!--<label asp-for="Classificacao" class="col-md-2 control-label"></label>-->
+            <label class="col-md-2 control-label">Classificação</label>
+            <div class="col-md-10">
+                <input asp-for="Classificacao" class="form-control" />
+                <span asp-validation-for="Classificacao" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <!--<label asp-for="Lancamento" class="col-md-2 control-label"></label>-->
+            <label class="col-md-2 control-label">Data da Publicação</label>
+            <div class="col-md-10">
+                <input asp-for="Lancamento" class="form-control" />
+                <span asp-validation-for="Lancamento" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <!--<label asp-for="Genero" class="col-md-2 control-label"></label>-->
+            <label class="col-md-2 control-label">Gênero</label> 
+            <div class="col-md-10">
+                <input asp-for="Genero" class="form-control" />
+                <span asp-validation-for="Genero" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <!--<label asp-for="Preco" class="col-md-2 control-label"></label>-->
+            <label class="col-md-2 control-label">Valor da Publicação</label>            
+            <div class="col-md-10">
+                <input asp-for="Preco" class="form-control" />
+                <span asp-validation-for="Preco" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+</form>
+
+<div>
+    <a asp-action="Index">Retornar para a Lista</a>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,0 +1,26 @@
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=tcp:servernoticialocadora.database.windows.net,1433;Initial Catalog=db_locadora;Persist Security Info=False;User ID=fiap_user_pos;Password=IR3578@Tech#jr;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "AllowedHosts": "*",
+  "JWT": {
+    "ValidAudience": "https://noticiatechapi.azurewebsites.net",
+    "ValidIssuer": "https://noticiatechapi.azurewebsites.net",
+    "SecretKey": "Minha@Super#Secreta&Chave*Privada!2023",
+    "TokenValidityInMinutes": 30,
+    "RefreshTokenValidityInMinutes": 60
+  },
+  "AzureAd": {
+    "Domain": "namara26hotmail.onmicrosoft.com",
+    "TenantId": "4ccfd1b0-18d2-4075-87a9-c58bc61892ce",
+    "ClientId": "7bbed41f-0d44-486d-9aa7-9da3e4ab2a65",
+    "Instance": "https://login.microsoftonline.com/",
+    "CallbackPath": "/signin-oidc"
+  }
+}

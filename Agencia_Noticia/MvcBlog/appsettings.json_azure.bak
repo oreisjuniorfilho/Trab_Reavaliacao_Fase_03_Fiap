@@ -1,0 +1,16 @@
+{
+  "Logging": {
+    "LogLevel": {
+      "Default": "Warning",
+      "Microsoft.AspNetCore": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "MvcBlogNoticiasContext": "Server=tcp:servernoticialocadora.database.windows.net,1433;Initial Catalog=db_locadora;Persist Security Info=False;User ID=fiap_user_pos;Password=IR3578@Tech#jr;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=False;Connection Timeout=30;"
+  },
+  "ApiSettings": {
+    "BaseUrl": "https://noticiatechapi.azurewebsites.net/Noticias",
+    "ApiUrl": "https://noticiatechapi.azurewebsites.net/",
+    "ApiKey": "Minha@Super#Secreta&Chave*Privada!2023"
+  }
+}

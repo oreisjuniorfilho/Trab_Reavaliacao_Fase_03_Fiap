@@ -1,0 +1,11 @@
+{
+  "Logging": {
+    "IncludeScopes": false,
+    "LogLevel": {
+      "Default": "Warning"
+    }
+  },
+  "ConnectionStrings": {
+    "MvcBlogNoticiasContext": "Server=(localdb)\\mssqllocaldb;Database=MvcBlogNoticiasContext-af418162-dae9-452f-a5a1-6d6e066cfacc;Trusted_Connection=True;MultipleActiveResultSets=true"
+  }
+}

@@ -1,0 +1,57 @@
+@model MvcBlogNoticias.Models.Noticia
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Exclusão</h2>
+
+<h3>Tem certeza de que deseja excluir isto?</h3>
+<div>
+    <h4>Notícias</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <input type="hidden" asp-for="ID" />
+        <dt>
+            @Html.DisplayNameFor(model => model.Titulo)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Titulo)
+        </dd>
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Lancamento)-->            
+            <label>Data da Publicação</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Lancamento)
+        </dd>
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Genero)-->
+            <label>Gênero</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Genero)
+        </dd>
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Preco)-->            
+            <label>Valor da Publicação</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Preco)
+        </dd>
+        <dt>
+            <!--@Html.DisplayNameFor(model => model.Classificacao)-->
+            <label>Classificação</label>
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Classificacao)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            <a asp-action="Index">Voltar a Lista</a>
+        </div>
+    </form>
+</div>
